@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GS Bakers</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <meta name="description" content="GS Bakers — Freshly baked goods made with love. Cakes, breads, pastries and more." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="logo">GS Bakers</h1>
+        <p class="tagline">Baked fresh. Loved daily.</p>
+      </div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="burger"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Fresh taste, warm hearts</h2>
+          <p>Welcome to GS Bakers — your neighborhood bakery for artisan breads, custom cakes, and daily pastries made from the finest ingredients.</p>
+          <p><a class="btn" href="#menu">See today's specials</a></p>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="product large">Signature Sourdough</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="container section">
+      <h3 class="section-title">Menu Highlights</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Classic Croissant</h4>
+          <p>Buttery, flaky layers baked every morning.</p>
+          <p class="price">₹80</p>
+        </article>
+
+        <article class="card">
+          <h4>Chocolate Fudge Cake</h4>
+          <p>Rich chocolate layered cake — perfect for celebrations.</p>
+          <p class="price">From ₹1200</p>
+        </article>
+
+        <article class="card">
+          <h4>Signature Sourdough</h4>
+          <p>Crispy crust, tangy crumb — made with a slow starter.</p>
+          <p class="price">₹250</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <h3 class="section-title">About GS Bakers</h3>
+      <p>GS Bakers is a small family-run bakery focused on traditional techniques and quality ingredients. We bake fresh each day and accept custom orders for cakes and events.</p>
+      <ul class="features">
+        <li>Daily fresh baking</li>
+        <li>Custom celebration cakes</li>
+        <li>Local delivery & pickup</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h3 class="section-title">Contact & Orders</h3>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Address:</strong> 12 Baker Street, Your City</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+          <p><strong>Hours:</strong> Mon–Sat 7:00–7:00</p>
+        </div>
+
+        <form id="order-form" class="order-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" id="name" required placeholder="Your name" />
+          </label>
+
+          <label>
+            Phone or Email
+            <input type="text" name="contact" id="contact-input" required placeholder="Phone or email" />
+          </label>
+
+          <label>
+            Message / Order details
+            <textarea name="message" id="message" rows="4" placeholder="Tell us what you'd like..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Send Order Request</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> GS Bakers — All rights reserved.</p>
+      <p class="credits">Made with ♥ by GS Bakers</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
